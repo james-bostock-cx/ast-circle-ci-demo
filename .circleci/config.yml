@@ -20,7 +20,8 @@ jobs:
                         -s . \
                         --project-name "${CIRCLE_PROJECT_REPONAME}" \
                         --branch "${CIRCLE_BRANCH}" \
-                        --scan-types sast
+                        --scan-types sast \
+                        --threshold sast-high=1
 
 workflows:
   ast-scan:
